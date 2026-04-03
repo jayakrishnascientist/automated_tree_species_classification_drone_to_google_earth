@@ -186,6 +186,31 @@ species_map.kmz
 
 # Installation
 
+## clone the repo
+```bash
+git clone https://github.com/jayakrishnascientist/automated_tree_species_classification_drone_to_google_earth.git
+```
+---
+folder structure 
+```
+tree-crown-pipeline/
+│
+├── examples/
+│   ├── S3C.tif                # Sample orthomosaic input
+│   └── s3_tree.geojson       # Sample tree crown annotations
+│
+├── README.md                 # Project documentation
+├── requirements.txt          # Python dependencies
+├── config.py                 # Configuration settings
+├── end_to_end_pipeline.py    # Full pipeline execution script
+├── tree_crown_pipeline.py    # Core pipeline logic
+├── predict.py                # Prediction script (model inference)
+
+```
+---
+edit config.py file only and run end_to_end_pipeline.py only (make all files in single folder)
+---
+
 ## Step 1: Create Environment
 
 ```bash
